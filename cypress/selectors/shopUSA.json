@@ -1,0 +1,22 @@
+{
+    "shopUsaLandingPage": ".rd-navbar-panel > .rd-navbar-brand > .brand-name > img",
+    "popUpCloseBtn":".g-n2br1u",
+    "loginPage": {
+    "navigationLogIn":":nth-child(7) .loginDetails",
+    "emailInput":"#txtsuiteID",
+    "passwordInput":"#txtpassword",
+    "loginButton":"#loginbutton"
+},
+    "sidebarFashion":".cat-item-1070 a",
+    "ofraFashion":":nth-child(16) > .blog-item > .blog-item-image-wrap > a > .full-width",
+    "ofraMakeUp":":nth-child(2) > .vc_column-inner a",
+    "acceptCookiesOfra":"button[class='chakra-button css-h3tw2d']",
+    "ofraLogo":"a[aria-label='Home']",
+    "highlighterCloudNine":"article:nth-child(1) div:nth-child(1) figure:nth-child(1) a",
+    "addToCart":"button[class='chakra-button css-1vzzvis']",
+    "cartButton":"div[class='css-70qvj9'] button[type='button']",
+    "proceedToCheckout":"button[class='chakra-button css-1theyo8']",
+    "needlessClick":"button[class = 'needsclick klaviyo-close-form kl-private-reset-css-Xuajs1']",
+    "totalPriceCheckout":"div[class='_1x41w3p1 _1fragemkb _1fragemj5 _1x41w3p5']"
+
+}

@@ -1,0 +1,39 @@
+{
+  "name": "shopusa-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:test": "node_modules\\.bin\\cypress run --reporter mochawesome",
+    "cy:open": "node_modules\\.bin\\cypress open",
+    "cy:headedTest": "npm run cy:test --  --headed",
+    "cy:test:dev": "npm run cy:test -- --env version=\"dev \"",
+    "cy:test:regression": "npm run cy:test -- --env grep=\"regression \"",
+    "cy:test:smoke": "npm run cy:test -- --env grep=\"smoke \"",
+    "cy:browserChrome": "npm run cy:test -- --browser chrome",
+    "merge_reports": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/finalReport.json",
+    "generate_HTML": "marge cypress/report/finalReport.json --reportDir ./ --inline",
+    "clean:reports": "(if exist cypress\\report (rmdir /Q /S cypress\\report))"
+  },
+  "author": "Stevan",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.4",
+    "@cypress/grep": "^3.1.5",
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.6.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "mocha": "^10.2.0",
+    "mochawesome-merge": "^4.3.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "chai-json-schema": "^1.5.1",
+    "chai-sorted": "^0.2.0",
+    "cypress-if": "^1.12.0",
+    "cypress-intercept-formdata": "^0.5.2",
+    "cypress-real-events": "^1.8.1"
+  }
+}
