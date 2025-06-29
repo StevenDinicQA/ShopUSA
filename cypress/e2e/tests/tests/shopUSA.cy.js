@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import shopUSASteps from "../steps/shopUSA-steps";
+import shopUSASteps from "../../../steps/shopUSA-steps";
 
 Cypress.on("uncaught:exception", (err, runnable) => {
   return false;
