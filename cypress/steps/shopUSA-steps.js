@@ -3,13 +3,20 @@ import * as testData from "../fixtures/testData.json";
 
 const pageObjects = new PageObjects();
 
-class shopUSA {
+class shopUSASteps {
+  cookieHandling() {
+    cy.wait(1000);
+    pageObjects.getDenyCookies().click();
+    cy.wait(1000);
+  }
+
   login() {
     pageObjects.getLoginPage().should("be.visible");
     pageObjects.getLoginPage().click();
     pageObjects.getEmailInput().should("be.visible");
     pageObjects.getEmailInput().type(testData.inputEmail);
     pageObjects.getPasswordInput().type(testData.inputPassword);
+    cy.wait(1000);
     pageObjects.getLoginButton().click();
   }
 
@@ -33,10 +40,10 @@ class shopUSA {
       if ($button.is(":visible")) {
         pageObjects.getNeedlessClick().click();
       }
-    })
+    });
     pageObjects.getProceedToCheckout().click();
     pageObjects.getTotalPriceCheckout().contains(testData.totalPrice);
   }
 }
 
-module.exports = new shopUSA();
+module.exports = new shopUSASteps();

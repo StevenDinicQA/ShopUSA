@@ -1,8 +1,9 @@
 {
     "shopUsaLandingPage": ".rd-navbar-panel > .rd-navbar-brand > .brand-name > img",
     "popUpCloseBtn":".g-n2br1u",
+    "denyCookies":"#CybotCookiebotDialogBodyButtonDecline",
     "loginPage": {
-    "navigationLogIn":":nth-child(7) .loginDetails",
+    "navigationLogIn":":nth-child(6) .loginDetails",
     "emailInput":"#txtsuiteID",
     "passwordInput":"#txtpassword",
     "loginButton":"#loginbutton"
